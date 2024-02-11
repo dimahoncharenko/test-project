@@ -16,7 +16,7 @@ const updateState = (): AvailableSections => {
       banner: false,
       video: true,
       comments: true,
-      picture: false,
+      picture: "Money Flow",
     };
   } else if (hours >= 18 && minutes >= 20 && hours < 21) {
     return {
@@ -32,7 +32,7 @@ const updateState = (): AvailableSections => {
       comments: true,
       banner: false,
       text: false,
-      picture: true,
+      picture: "Traffic Increase",
     };
   }
 };

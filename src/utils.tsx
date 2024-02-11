@@ -53,7 +53,7 @@ export type AvailableSections = {
   banner: boolean;
   text: boolean;
   comments: boolean;
-  picture: boolean;
+  picture: "Traffic Increase" | "Money Flow" | false;
 };
 
 export const sections_seed: AvailableSections = {
@@ -61,7 +61,7 @@ export const sections_seed: AvailableSections = {
   comments: true,
   text: true,
   video: true,
-  picture: true,
+  picture: "Traffic Increase",
 };
 
 export const availableSectionsContext =

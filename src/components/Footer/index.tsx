@@ -5,7 +5,7 @@ export const Footer = () => {
     <div className="py-6 px-4 md:px-8 bg-[#090909] border-t-[1px] border-[#454545]">
       <Container className="lg:flex lg:justify-between lg:items-end">
         <div className="flex gap-12 sm:gap-4 flex-col justify-between">
-          <div className="grid grid-cols-2 grid-rows-2 lg:gap-8 max-w-4xl mx-auto gap-x-5 items-end">
+          <div className="grid grid-cols-2 grid-rows-2 lg:gap-8 max-w-4xl mx-auto gap-y-5 gap-x-5 items-end">
             <div>
               <p className="text-[10px] text-[#A3A3A3] text-opacity-50 lg:text-sm leading-4 font-medium mb-1">
                 Украина

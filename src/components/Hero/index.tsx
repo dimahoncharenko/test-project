@@ -1,21 +1,24 @@
 import { useContext } from "react";
 
-import { traffic_increase } from "./assets";
-import { availableSectionsContext } from "../../utils";
+import { traffic_increase, money_flow } from "./assets";
+import { availableSectionsContext, AvailableSections } from "../../utils";
 
 export const Hero = () => {
   const { video, picture }  = useContext(availableSectionsContext);
 
   return <>
     {video && <Video/>}
-    {picture && <Image/>}
+    {picture && <Image type={picture}/>}
   </>
 };
 
-const Image = () => {
+type ImageProps = {
+  type: AvailableSections["picture"]
+}
+const Image = ({ type }: ImageProps) => {
   return (
     <div className="w-full">
-      <img className="w-full h-full" src={traffic_increase} alt="" />
+      <img className="w-full h-full" src={type === "Money Flow" ? money_flow : traffic_increase} alt="" />
     </div>
   );
 };
