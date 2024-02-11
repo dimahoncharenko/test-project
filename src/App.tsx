@@ -8,7 +8,7 @@ import { CommentsProvider, AvailableSectionsProvider } from "./utils";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col justify-between h-screen">
       <Container>
         <GridLayout>
           <AvailableSectionsProvider>
@@ -20,7 +20,7 @@ function App() {
         </GridLayout>
       </Container>
       <Footer />
-    </>
+    </div>
   );
 }
 
