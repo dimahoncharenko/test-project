@@ -45,7 +45,7 @@ export const Banner = () => {
           <a
             href="https://alexyanovsky.com/udvoenie_pribyli?utm_source=trafik_web"
             target="_blank"
-            className="relative z-10 inline-block mt-auto self-start visited:text-white font-semibold text-center leading-[17px] p-3 sm:p-6 lg:py-4 lg:px-2 uppercase text-[13px] xl:text-[15px] bg-[#5600E1] text-nowrap"
+            className="relative z-10 inline-block mt-auto self-start text-white visited:text-white hover:text-slate-200 font-semibold text-center leading-[17px] p-3 sm:p-6 lg:py-4 lg:px-2 uppercase text-[13px] xl:text-[15px] bg-[#5600E1] text-nowrap"
           >
             Получить спецпредложение
           </a>
