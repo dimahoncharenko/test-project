@@ -7,6 +7,8 @@ export type Comment = {
   content: string;
   timestamp: number;
   avatar?: string;
+  likes: number;
+  dislikes: number;
 };
 
 const comments_seed: Comment[] = [
@@ -14,12 +16,16 @@ const comments_seed: Comment[] = [
     username: "Имя пользователя",
     timestamp: Date.now() - 2 * 24 * 60 * 60 * 1000,
     content: "Ждём начала!",
+    likes: 1,
+    dislikes: 0,
   },
   {
     username: "Светлана",
     timestamp: Date.now() - 2 * 24 * 60 * 60 * 1000,
     content: "Ждём начала!",
     avatar: "/images/svitlana.png",
+    likes: 1,
+    dislikes: 0,
   },
 ];
 

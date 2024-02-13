@@ -36,6 +36,8 @@ export const Sidebar = () => {
       username: formState.name || formState.guestName,
       timestamp: Date.now(),
       avatar: "/icons/guest.svg",
+      likes: 0,
+      dislikes: 0,
     };
 
     addComment(newComment);

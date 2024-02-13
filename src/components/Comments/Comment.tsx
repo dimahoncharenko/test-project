@@ -5,6 +5,8 @@ type Props = {
   timestamp: string;
   content: string;
   avatar?: string;
+  likes?: number;
+  dislikes?: number;
 };
 
 export const Comment = ({
@@ -12,6 +14,8 @@ export const Comment = ({
   timestamp,
   content,
   avatar = "/icons/guest.svg",
+  likes = 0,
+  dislikes = 0
 }: Props) => {
   return (
     <div className="flex gap-3">
@@ -34,7 +38,7 @@ export const Comment = ({
           <div className="flex gap-2">
             <button type="button">
               <img className="w-4 h-4 inline-block" src={thumb_up} alt="Like" />
-              <span className="ml-2 text-sm">1</span>
+              <span className="ml-2 text-sm">{likes}</span>
             </button>
             <button type="button">
               <img
@@ -42,7 +46,7 @@ export const Comment = ({
                 src={thumb_down}
                 alt="Dislike"
               />
-              <span className="ml-2 text-sm">0</span>
+              <span className="ml-2 text-sm">{dislikes}</span>
             </button>
             <button type="button">
               <img className="w-4 inline-block ml-2" src={more} alt="More menu" />

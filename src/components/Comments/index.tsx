@@ -16,6 +16,8 @@ export const Comments = () => {
           timestamp={moment(cmt.timestamp).fromNow()}
           content={cmt.content}
           avatar={cmt.avatar}
+          likes={cmt.likes}
+          dislikes={cmt.dislikes}
         />
       ))}
     </div>
