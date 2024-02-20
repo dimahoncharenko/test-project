@@ -9,16 +9,19 @@ const updateState = (): AvailableSections => {
 
   const hours = parseInt(timeParts[0], 10);
   const minutes = parseInt(timeParts[1], 10);
+  const seconds = parseInt(timeParts[2], 10);
 
-  if (hours === 18 && minutes < 20) {
+  // if (hours === 18 && minutes < 20) {
+  if (seconds <= 20) {
     return {
       text: false,
       banner: false,
-      video: true,
+      video: false,
       comments: true,
       picture: "Money Flow",
     };
-  } else if (hours >= 18 && minutes >= 20 && hours < 21) {
+  // } else if (hours >= 18 && minutes >= 20 && hours < 21) {
+  } else if (seconds > 20 && seconds <= 40) {
     return {
       video: true,
       banner: true,
@@ -43,7 +46,7 @@ export const useTime = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setState(() => updateState());
-    }, 10 * 60 * 1000);
+    }, 1000);
 
     return () => {
       clearInterval(interval);
