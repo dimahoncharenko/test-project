@@ -7,8 +7,8 @@ const updateState = (): AvailableSections => {
   const currentTime = moment().format("LTS");
   const timeParts = currentTime.split(":");
 
-  const hours = parseInt(timeParts[0], 10);
-  const minutes = parseInt(timeParts[1], 10);
+  // const hours = parseInt(timeParts[0], 10);
+  // const minutes = parseInt(timeParts[1], 10);
   const seconds = parseInt(timeParts[2], 10);
 
   // if (hours === 18 && minutes < 20) {
